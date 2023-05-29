@@ -14,6 +14,36 @@
 
   <title>properties</title>
 </head>
+  
+  <div id="google_translate_element" class="mt-4"></div>
+
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      { pageLanguage: "en" },
+      "google_translate_element"
+    );
+  }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<select id="language_dropdown" class="mt-4 rounded-md bg-white border border-gray-300 px-4 py-2">
+  <option value="en">English</option>
+  <option value="fr">French</option>
+  <option value="es">Spanish</option>
+  <option value="de">German</option>
+  <option value="it">Italian</option>
+</select>
+
+<script>
+  document.getElementById("language_dropdown").addEventListener("change", function() {
+    var language = this.value;
+    var translateElement = document.getElementById("google_translate_element");
+    translateElement.setAttribute("pageLanguage", language);
+  });
+</script>
+
 
 <body class="bg-black dark:bg-black dark:text-white">
   <div class="container mx-auto">
