@@ -14,36 +14,6 @@
 
   <title>properties</title>
 </head>
-  
-  <div id="google_translate_element"></div>
-
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-</script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<select id="language_dropdown">
-  <option value="en">English</option>
-  <option value="ar">Arabic</option>
-  
-</select>
-
-<script>
-document.getElementById("language_dropdown").addEventListener("change", function() {
-  var language = this.value();
-  var translateElement = document.getElementById("google_translate_element");
-  translateElement.setAttribute("pageLanguage", language);
-});
-</script>
-
-
-
 <body class="bg-black dark:bg-black dark:text-white">
   <div class="container mx-auto">
     <section class="mx-auto">
@@ -83,6 +53,33 @@ document.getElementById("language_dropdown").addEventListener("change", function
         </button>
       </a>
     </div>
+    
+    
+    
+    <div class="mt-14 flex justify-center items-center" id="google_translate_element"></div>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "en" },
+    "google_translate_element"
+  );
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+<script>
+document.getElementById("language_dropdown").addEventListener("change", function() {
+  var language = this.value();
+  var translateElement = document.getElementById("google_translate_element");
+  translateElement.setAttribute("pageLanguage", language);
+});
+</script>
+
+
 
 
 
