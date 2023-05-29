@@ -46,28 +46,28 @@
 <body>
     <!--https://bytona.vercel.app -->
     
-    <div class="ml-10" id="google_translate_element"></div>
+  <div class="mt-12 ml-40" id="google_translate_element"></div>
 
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-</script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-<script>
-document.getElementById("language_dropdown").addEventListener("change", function() {
-  var language = this.value;
-  var translateElement = document.getElementById("google_translate_element");
-  translateElement.setAttribute("pageLanguage", language);
-});
-</script>
+    <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: "en" },
+        "google_translate_element"
+      );
+    }
+    </script>
+    
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    
+    
+    <script>
+    document.getElementById("language_dropdown").addEventListener("change", function() {
+      var language = this.value;
+      var translateElement = document.getElementById("google_translate_element");
+      translateElement.setAttribute("pageLanguage", language);
+    });
+    </script>
 
 
     <!--==================== HEADER ====================-->
