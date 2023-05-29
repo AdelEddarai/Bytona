@@ -154,10 +154,8 @@
             <div class="title1 flex flex-col md:grid grid-cols-9 mx-auto p-2">
                 <div class="flex flex-row-reverse md:contents">
                     <div class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto border border-gray-300">
-                        <h3 class="font-semibold text-xl mb-1 text-white">Title 1</h3>
-                        <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                            blanditiis, dolore repellat dignissimos non sint architecto vel provident temporibus dolor
-                            cupiditate voluptatum ut doloribus nemo ipsa corporis ad. Earum, labore.</p>
+                        <h3 class="font-semibold text-xl mb-1 text-white">Property Acquisition</h3>
+                        <p class="text-gray-600">We acquired a prime piece of land in a desirable location for our real estate project.</p>
                     </div>
 
                     <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -184,20 +182,16 @@
 
                     <div
                         class="title2 w-full col-start-6 col-end-10 my-4 mr-auto p-4 border border-gray-300 rounded-xl">
-                        <h3 class="font-semibold text-xl mb-1 text-white">Title 2</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                            nesciunt maiores ipsa molestiae magnam libero dolorem explicabo. Nobis veniam incidunt at,
-                            alias ipsam est suscipit maxime sunt quia. Consectetur, aut.</p>
+                        <h3 class="font-semibold text-xl mb-1 text-white">Architectural Design</h3>
+                        <p class="text-gray-600">Collaborated with renowned architects to create a modern and sustainable design for our upcoming development</p>
                     </div>
                 </div>
 
                 <div class="flex flex-row-reverse md:contents">
                     <div class="title3 w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto border border-gray-300">
-                        <h3 class="title3 font-semibold text-xl mb-1 text-white">Title 3</h3>
-                        <p class="text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-                            ratione perspiciatis consectetur? Impedit inventore perferendis eligendi voluptatum facilis,
-                            consequatur provident facere ab quasi laudantium magni culpa porro tempora accusantium
-                            autem?</p>
+                        <h3 class="title3 font-semibold text-xl mb-1 text-white">Obtained Building Permits</h3>
+                        <p class="text-gray-600">Successfully secured all necessary permits and approvals from local authorities to proceed with construction.
+                            </p>
                     </div>
 
                     <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -224,10 +218,8 @@
 
                     <div
                         class="title2 w-full col-start-6 col-end-10 my-4 mr-auto p-4 border border-gray-300 rounded-xl">
-                        <h3 class="font-semibold text-xl mb-1 text-white">Title 4</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolores
-                            minima mollitia quidem omnis doloremque magni vitae, sint impedit alias corrupti commodi
-                            nesciunt consequatur eveniet nisi amet architecto expedita rerum.</p>
+                        <h3 class="font-semibold text-xl mb-1 text-white">Construction Commencement</h3>
+                        <p class="text-gray-600">Started construction activities, including site preparation, foundation laying, and infrastructure development.</p>
                     </div>
                 </div>
             </div>
@@ -751,6 +743,37 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class='bx bxs-chevrons-up'></i>
     </a>
+        
+        
+ <div id="google_translate_element"></div>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "en" },
+    "google_translate_element"
+  );
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<select id="language_dropdown">
+  <option value="en">English</option>
+  <option value="fr">French</option>
+  <option value="es">Spanish</option>
+  <option value="de">German</option>
+  <option value="it">Italian</option>
+</select>
+
+<script>
+document.getElementById("language_dropdown").addEventListener("change", function() {
+  var language = this.value;
+  var translateElement = document.getElementById("google_translate_element");
+  translateElement.setAttribute("pageLanguage", language);
+});
+</script>
+
 
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
