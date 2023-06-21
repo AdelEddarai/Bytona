@@ -8,7 +8,10 @@
 
   <link rel="stylesheet" href="assets/css/properties.css">
   <link rel="stylesheet" href="assets/css/estilos.css">
-<script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- <link rel="stylesheet" href="../build/css/output.css"> -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -16,11 +19,17 @@
 
   <title>properties</title>
 </head>
+
+
+
 <body class="bg-black dark:bg-black dark:text-white">
+  
   <div class="container mx-auto">
     <section class="mx-auto">
       <section class="property" id="property">
         <div class="container flex flex-col justify-center items-center text-center">
+
+          
           <p class="text-gray-500">Properties</p>
           <h2 class="text-4xl font-bold">Featured Listings</h2>
         </div>
@@ -32,8 +41,13 @@
         <a class="spotlight flex justify-center items-center" href="./images/1682867849841.jpg" data-button="Click Me!"
           data-button-href="./VR/vr_4.html"
           data-description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
+
+
           <img class="rounded-lg flex justify-center items-center" src="./images/dar3.jpg"
             alt="Lorem ipsum dolor sit amet">
+
+
+
         </a>
         <a class="spotlight" href="./images/1682867853598.jpg"
           data-description="Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.">
@@ -50,39 +64,39 @@
     <div class="flex justify-center items-center mt-6 mb-6">
       <a href="./VR/vr_4.html">
         <button
-          class="justify-center bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-bold py-2 px-4 rounded">
+          class="justify-center bg-violet-500 hover:from-blue-600 hover:to-blue-800 text-white font-bold py-2 px-4 rounded">
           VR View
         </button>
       </a>
     </div>
+
+
+
+    
+    <div class="mt-14 ml-" id="google_translate_element"></div>
+
+    <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: "en" },
+        "google_translate_element"
+      );
+    }
+    </script>
+    
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     
     
     
-    <div class="mt-14 flex justify-center items-center" id="google_translate_element"></div>
-
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-</script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
-
-<script>
-document.getElementById("language_dropdown").addEventListener("change", function() {
-  var language = this.value();
-  var translateElement = document.getElementById("google_translate_element");
-  translateElement.setAttribute("pageLanguage", language);
-});
-</script>
-
-
-
+    <script>
+    document.getElementById("language_dropdown").addEventListener("change", function() {
+      var language = this.value();
+      var translateElement = document.getElementById("google_translate_element");
+      translateElement.setAttribute("pageLanguage", language);
+    });
+    </script>
+    
+    
 
 
     <!-- <div class="bg-gray-900 text-gray-400 rounded-lg shadow p-6 mb-5">
@@ -123,12 +137,14 @@ document.getElementById("language_dropdown").addEventListener("change", function
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet massa nec dapibus fringilla. Mauris vitae interdum enim, vel pharetra nisl.
       </p>
     </div> -->
-    
-    
-   
 
 
-   <div class="bg-gray-900 rounded-lg shadow p-6 mb-10 mt-10">
+    
+
+    
+
+
+    <div class="bg-gray-900 rounded-lg shadow p-6 mb-10 mt-10">
       <h2 class="text-2xl font-bold mb-4">Nearby Amenities and Points of Interest</h2>
       <div class="grid grid-cols-2 gap-4">
         <div class="rounded-md bg-blue-100 p-4">
@@ -201,23 +217,7 @@ document.getElementById("language_dropdown").addEventListener("change", function
     </main>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
-
-  <div class="flex justify-center items-center">
-    <add-to-calendar-button 
-    name="[Reminder] Test the Add to Calendar Button"
-    startDate="today+2"
-    startTime="10:15"
-    endTime="23:30"
-    timeZone="America/Los_Angeles"
-    location="https://add-to-calendar-button.com"
-    description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
-    options="'Apple','Google','iCal','Outlook.com','Yahoo'"
-    lightMode="bodyScheme"
-  ></add-to-calendar-button>
-</div>
-
+  
 
     <!-- <div
                 class="w-full flex-1 mt-8 p-8 order-3 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
@@ -257,6 +257,27 @@ document.getElementById("language_dropdown").addEventListener("change", function
   </main>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
+
+  <div class="flex justify-center items-center">
+    <add-to-calendar-button 
+    name="[Reminder] Test the Add to Calendar Button"
+    startDate="today+2"
+    startTime="10:15"
+    endTime="23:30"
+    timeZone="America/Los_Angeles"
+    location="https://add-to-calendar-button.com"
+    description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
+    options="'Apple','Google','iCal','Outlook.com','Yahoo'"
+    lightMode="bodyScheme"
+  ></add-to-calendar-button>
+</div>
+
+
+
+  
+
+
   <div class="flex justify-center items-center col-sm mt-5">
     <iframe
       src="https://www.google.com/maps/d/embed?mid=1mJXWIlR20vec-LJyQAUQERgyN2I&ehbc=2E312F"
@@ -269,38 +290,26 @@ document.getElementById("language_dropdown").addEventListener("change", function
   <h1 class="text-4xl font-bold text-center">About the home</h1>
   <br>
   <div class="text-center">
-  <p class="text-center text-lg text-gray-300 text-center">Welcome to your dream home! This stunning property boasts
-    breathtaking views of the mountains, and is located in one of the most sought-after neighborhoods in the
-    area.
-    With four spacious bedrooms, three and a half bathrooms, and an open-concept living space, this house is
-    perfect for families or those who love to entertain.
+  <p class="text-lg text-gray-300 text-center">Welcome to this stunning [bedroom count] bedroom, [bathroom count] bathroom home situated in the desirable [neighborhood/city]. This charming house offers a warm and inviting ambiance, perfect for comfortable living and entertaining.
 
-    The heart of the home is the gourmet kitchen, which features granite countertops, stainless steel
-    appliances,
-    and plenty of cabinet space. The kitchen flows seamlessly into the dining and living areas, which are
-    flooded
-    with natural light and offer stunning views of the surrounding mountains.
+    As you step inside, you'll be greeted by an open and spacious layout that maximizes natural light and creates a welcoming atmosphere. The [living room/family room] is ideal for relaxation, featuring [highlight a unique feature, such as a cozy fireplace or large windows].
+    
+    The well-appointed kitchen is a chef's delight, boasting [highlight key features, such as modern appliances, ample storage space, and a breakfast bar]. It's the perfect place to prepare delicious meals and gather with family and friends.
+    
+    The [bedrooms count] bedrooms offer comfort and tranquility, with [highlight any special features, such as a master suite with a walk-in closet or en-suite bathroom]. The [bathroom count] bathrooms are elegantly designed and provide convenience for the whole family.
+    
+    Step outside to the backyard oasis, where you'll find a [highlight any outdoor features, such as a spacious patio, landscaped garden, or swimming pool]. It's the ideal space for hosting summer barbecues, enjoying outdoor activities, or simply unwinding after a long day.
+    
+    Additional features of this lovely home include [mention any notable features such as hardwood flooring, high ceilings, energy-efficient upgrades, or smart home technology]. With [total square footage] of living space, there's plenty of room for everyone to comfortably enjoy.
+    
+    Located in the highly sought-after [neighborhood/city], this home offers easy access to [highlight nearby amenities, such as schools, parks, shopping centers, and transportation]. You'll love the convenience of nearby [mention any notable attractions or landmarks].</p>
 
-    The master suite is a true oasis, with a spacious bedroom, a luxurious ensuite bathroom, and a private
-    balcony
-    with panoramic mountain views. The remaining bedrooms are equally spacious, and offer plenty of closet
-    space
-    and natural light.
 
-    Outside, the large patio is perfect for hosting summer barbecues, and the beautifully landscaped yard
-    offers
-    plenty of space for kids and pets to play. And with a three-car garage, there's plenty of space for all
-    your
-    vehicles and storage needs.
-
-    This house is located in a prime location, with easy access to local shopping, dining, and entertainment
-    options. Plus, with top-rated schools in the area, it's the perfect place to raise a family.
-
-    Don't miss out on this incredible opportunity to own your dream home. Contact us today to schedule a
-    tour and
-    see for yourself why this property is a must-see!.</p>
-
-  </div>
+   
+    <div class="w-full fixed bottom-0 text-center bg-red-700 py-4 text-white">
+      This house is for sale <strong>Contact Us Now</strong>
+    </div>
+  
 
   <br>
 
@@ -324,6 +333,9 @@ document.getElementById("language_dropdown").addEventListener("change", function
   <!-- Contact -->
 
 
+  
+
+
   <div class="isolate bg-black px-6 py-24 sm:py-32 lg:px-8">
     <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
       aria-hidden="true">
@@ -337,7 +349,7 @@ document.getElementById("language_dropdown").addEventListener("change", function
       <p class="mt-2 text-lg leading-8 text-white">We are very please to contact</p>
     </div>
 
-     <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center">
       <h2 class="text-2xl font-bold mb-4">Property Price</h2>
       <div class="flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24"
@@ -351,6 +363,31 @@ document.getElementById("language_dropdown").addEventListener("change", function
       </div>
       <span id="priceValue" class="text-xl font-bold mt-2">$500,000</span>
     </div>
+    
+    <script>
+      function updatePriceValue(value) {
+        const priceValueElement = document.getElementById('priceValue');
+        const formattedValue = numberWithCommas(value);
+        priceValueElement.textContent = '$' + formattedValue;
+      }
+    
+      function numberWithCommas(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+    </script>
+    
+    
+    <script>
+      function updatePriceValue(value) {
+        const priceValueElement = document.getElementById('priceValue');
+        const formattedValue = numberWithCommas(value);
+        priceValueElement.textContent = '$' + formattedValue;
+      }
+    
+      function numberWithCommas(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+    </script>
     
     <form onsubmit="sendMail(); reset(); return false;" action="#" method="POST"
       class="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -466,32 +503,6 @@ document.getElementById("language_dropdown").addEventListener("change", function
 
 
 
-   <script>
-      function updatePriceValue(value) {
-        const priceValueElement = document.getElementById('priceValue');
-        const formattedValue = numberWithCommas(value);
-        priceValueElement.textContent = '$' + formattedValue;
-      }
-    
-      function numberWithCommas(number) {
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-      }
-    </script>
-    
-    
-    <script>
-      function updatePriceValue(value) {
-        const priceValueElement = document.getElementById('priceValue');
-        const formattedValue = numberWithCommas(value);
-        priceValueElement.textContent = '$' + formattedValue;
-      }
-    
-      function numberWithCommas(number) {
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-      }
-    </script>
-
-
   <!--==================== FOOTER ====================-->
   <footer class="footer section">
     <div class="footer__container container grid">
@@ -589,7 +600,7 @@ document.getElementById("language_dropdown").addEventListener("change", function
   <script src="assets/js/spotlight.bundle.js"></script>
 
   <!-- Script that makes the sheet work -->
-  <script src="dist/bottom_sheet.js" defer></script>
+  
 </body>
 
 </html>
