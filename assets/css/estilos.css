@@ -14,7 +14,7 @@
   --text-color: hsl(0, 0%, 53%);
   --text-color-light: hsl(0, 0%, 82%);
   --border-color: hsl(228, 99%, 98%);
-  --body-color: #fff;
+  --body-color: #eff2f1;
   --container-color: #fff;
   --bg-gradient: linear-gradient(120deg, var(--first-color), var(--first-color-light));
   /*========== Font and typography ==========*/
