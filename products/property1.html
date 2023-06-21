@@ -125,46 +125,7 @@ document.getElementById("language_dropdown").addEventListener("change", function
     </div> -->
     
     
-    <div class="flex flex-col items-center">
-      <h2 class="text-2xl font-bold mb-4">Property Price</h2>
-      <div class="flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24"
-          stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5 10l7-7m0 0L5 3m7-7v18M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
-        </svg>
-        <input type="range" min="0" max="1000000" step="10000" value="500000" id="priceRange"
-          class="w-64 h-6 appearance-none rounded-full bg-gray-300 outline-none"
-          oninput="updatePriceValue(this.value)">
-      </div>
-      <span id="priceValue" class="text-xl font-bold mt-2">$500,000</span>
-    </div>
-    
-    <script>
-      function updatePriceValue(value) {
-        const priceValueElement = document.getElementById('priceValue');
-        const formattedValue = numberWithCommas(value);
-        priceValueElement.textContent = '$' + formattedValue;
-      }
-    
-      function numberWithCommas(number) {
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-      }
-    </script>
-    
-    
-    <script>
-      function updatePriceValue(value) {
-        const priceValueElement = document.getElementById('priceValue');
-        const formattedValue = numberWithCommas(value);
-        priceValueElement.textContent = '$' + formattedValue;
-      }
-    
-      function numberWithCommas(number) {
-        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-      }
-    </script>
-    
+   
 
 
    <div class="bg-gray-900 rounded-lg shadow p-6 mb-10 mt-10">
@@ -375,6 +336,22 @@ document.getElementById("language_dropdown").addEventListener("change", function
       <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contact sales</h2>
       <p class="mt-2 text-lg leading-8 text-white">We are very please to contact</p>
     </div>
+
+     <div class="flex flex-col items-center">
+      <h2 class="text-2xl font-bold mb-4">Property Price</h2>
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 10l7-7m0 0L5 3m7-7v18M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+        <input type="range" min="0" max="1000000" step="10000" value="500000" id="priceRange"
+          class="w-64 h-6 appearance-none rounded-full bg-gray-300 outline-none"
+          oninput="updatePriceValue(this.value)">
+      </div>
+      <span id="priceValue" class="text-xl font-bold mt-2">$500,000</span>
+    </div>
+    
     <form onsubmit="sendMail(); reset(); return false;" action="#" method="POST"
       class="mx-auto mt-16 max-w-xl sm:mt-20">
       <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -485,6 +462,34 @@ document.getElementById("language_dropdown").addEventListener("change", function
 
     }
   </script>
+
+
+
+
+   <script>
+      function updatePriceValue(value) {
+        const priceValueElement = document.getElementById('priceValue');
+        const formattedValue = numberWithCommas(value);
+        priceValueElement.textContent = '$' + formattedValue;
+      }
+    
+      function numberWithCommas(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+    </script>
+    
+    
+    <script>
+      function updatePriceValue(value) {
+        const priceValueElement = document.getElementById('priceValue');
+        const formattedValue = numberWithCommas(value);
+        priceValueElement.textContent = '$' + formattedValue;
+      }
+    
+      function numberWithCommas(number) {
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+    </script>
 
 
   <!--==================== FOOTER ====================-->
