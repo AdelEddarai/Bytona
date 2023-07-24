@@ -2,805 +2,1316 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BytonaTech - real estate</title>
 
-    <!-- Meta charset -->
-    <meta charset="UTF-8">
-    <!-- meta viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- ===========title==========-->
-    <title> BaytonaTech - Real Estate</title>
-    <meta name="description" content="BaytonaTech is innovation platform that use a new technology in real estate to help landlord make more leads">
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
 
-    <meta name="author" content="Adel Eddarai" />
-    <!-- ==========meta keyword=============-->
-    <meta name="keywords"
-        content="Real Estate, Properties, Calculate Mortgage,EMI calculator,EMI,Loan Calculator,CI,Compound Interest,Installment,interest,bank" />
-    <meta name="robots" content="index,follow" />
-    <meta name="google-site-verification" content="" />
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-
-    <!----=============== GOOGLE FONTS ===============-->
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&family=Poppins:wght@400;500;600&family=Raleway:wght@300;700;900&display=swap"
-        rel="stylesheet">
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/Favicon.jpg" type="image/x-icon">
-
-    <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/estilos.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-   
-    
-    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@120;400&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!--https://bytona.vercel.app -->
-    
-  <div class="mt-20 ml-20" id="google_translate_element"></div>
+<body id="top">
 
-    <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        { pageLanguage: "en" },
-        "google_translate_element"
-      );
-    }
-    </script>
-    
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-    
-    
-    <script>
-    document.getElementById("language_dropdown").addEventListener("change", function() {
-      var language = this.value;
-      var translateElement = document.getElementById("google_translate_element");
-      translateElement.setAttribute("pageLanguage", language);
-    });
-    </script>
+  <!-- 
+    - #HEADER
+  -->
 
+  <header class="header" data-header>
 
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo" id="logo-principal">
-                <strong>BaytonaTech Real Estate</strong> <!--agregar logo img -->
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+21633332947" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">للمزيد من المعلوات </p>
+
+            <p class="helpline-number">+21633332947</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <!-- <img src="./assets/images/logo.svg" alt="Tourly logo"> -->
+         <strong> BaytonaTech</strong>
+        </a>
+
+        <div class="header-btn-group">
+
+          <button class="search-btn" aria-label="Search">
+            <ion-icon name="search"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class='bx bx-home-alt-2'></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="products/property1.html" class="nav__link">
-                            <i class='bx bx-building-house'></i>
-                            <span>Buy</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="Transaction/index.html" class="nav__link">
-                            <i class='bx bx-award'></i>
-                            <span>Transaction</span>
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="Contact/contact.html" class="nav__link">
-                            <i class='bx bx-phone'></i>
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          </li>
 
-            <!-- Theme change button -->
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
-
-            <a href="calculator/index.html" class="button nav__button">
-                Mortgage Calculate
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
             </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+                <a href="#home" class="navbar-link" data-nav-link>الصفحة الرئيسية</a>
+              </li>
+              
+              <li>
+                <a href="#" class="navbar-link" data-nav-link>من نحن</a>
+              </li>
+              
+              <li>
+                <a href="#destination" class="navbar-link" data-nav-link>الوجهات</a>
+              </li>
+              
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link>الباقات</a>
+              </li>
+              
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link>المعرض</a>
+              </li>
+              
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>اتصل بنا</a>
+              </li>
+              
+
+          </ul>
 
         </nav>
-    </header>
 
-    <!--==================== MAIN ====================-->
-    <main class="main ml-5">
-        <!--==================== HOME ====================-->
-        <section class="h-96 m-5 bg-cover bg-center rounded-xl overflow-hidden"
-            style="background-image: url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2075&amp;q=80);">
-            <span class="mask bg-gradient-dark opacity-7"></span>
-            <div class="container mx-auto py-20">
-                <div class="text-center">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 font-weight-bolder">Welcome to
-                        Real Estate</h1>
-                    <p class="mt-4 text-xl md:text-2xl lg:text-3xl text-orange-700 font-extrabold">Find your dream home
-                        with us</p>
-                    <div class="mt-9">
-                        <a href="#"
-                            class="px-9 py-5 bg-blue-600 text-white font-extrabold rounded hover:bg-blue-700 transition-colors duration-300">Shop
-                            Now</a>
-                    </div>
+        <button class="btn btn-primary">اتصل الان</button>
 
-                </div>
-        </section>
+      </div>
+    </div>
 
-        <!--==================== LOGOS ====================-->
-        <section class="logos section">
-            <div class="logos__container container grid">
-                <div class="logos__img"><img src="./assets/img/logo1.png" alt=""></div>
-                <div class="logos__img"><img src="./assets/img/logo2.png" alt=""></div>
-                <div class="logos__img"><img src="./assets/img/logo3.png" alt=""></div>
-                <div class="logos__img"><img src="./assets/img/logo4.png" alt=""></div>
-            </div>
-        </section>
+  </header>
 
 
 
-        <!--==================== Timelines ====================-->
 
 
+  <main>
+    <article>
 
-        <h1 class="text-3xl text-center py-3">Baytona Timeline</h1>
+      <!-- 
+        - #HERO
+      -->
 
-        <div class="min-h-screen flex items-center justify-center">
-            <div class="title1 flex flex-col md:grid grid-cols-9 mx-auto p-2">
-                <div class="flex flex-row-reverse md:contents">
-                    <div class="w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto border border-gray-300">
-                        <h3 class="font-semibold text-xl mb-1 text-white">Property Acquisition</h3>
-                        <p class="text-gray-600">We acquired a prime piece of land in a desirable location for our real estate project.</p>
-                    </div>
-
-                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                        <div class="h-full w-6 flex items-center justify-center">
-                            <div class="h-full w-0.5 bg-gray-200 pointer-events-none"></div>
-                        </div>
-
-                        <div
-                            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-blue-500 rounded-full bg-gray-100 shadow">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex md:contents">
-                    <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                        <div class="h-full w-6 flex items-center justify-center">
-                            <div class="h-full w-0.5 bg-gray-200 pointer-events-none"></div>
-                        </div>
-
-                        <div
-                            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-blue-500 rounded-full bg-gray-100 shadow">
-                        </div>
-                    </div>
-
-                    <div
-                        class="title2 w-full col-start-6 col-end-10 my-4 mr-auto p-4 border border-gray-300 rounded-xl">
-                        <h3 class="font-semibold text-xl mb-1 text-white">Architectural Design</h3>
-                        <p class="text-gray-600">Collaborated with renowned architects to create a modern and sustainable design for our upcoming development.</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-row-reverse md:contents">
-                    <div class="title3 w-full col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto border border-gray-300">
-                        <h3 class="title3 font-semibold text-xl mb-1 text-white">Obtained Building Permits</h3>
-                        <p class="text-gray-600">Successfully secured all necessary permits and approvals from local authorities to proceed with construction.</p>
-                    </div>
-
-                    <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                        <div class="h-full w-6 flex items-center justify-center">
-                            <div class="h-full w-0.5 bg-gray-200 pointer-events-none"></div>
-                        </div>
-
-                        <div
-                            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-blue-500 rounded-full bg-gray-100 shadow">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex md:contents">
-                    <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                        <div class="h-full w-6 flex items-center justify-center">
-                            <div class="h-full w-0.5 bg-gray-200 pointer-events-none"></div>
-                        </div>
-
-                        <div
-                            class="w-6 h-6 absolute top-1/2 -mt-3 border-2 border-blue-500 rounded-full bg-gray-100 shadow">
-                        </div>
-                    </div>
-
-                    <div
-                        class="title2 w-full col-start-6 col-end-10 my-4 mr-auto p-4 border border-gray-300 rounded-xl">
-                        <h3 class="font-semibold text-xl mb-1 text-white">Construction Commencement</h3>
-                        <p class="text-gray-600">Started construction activities, including site preparation, foundation laying, and infrastructure development.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--==================== POPULAR ====================-->
-        <section class="popular section" id="popular">
-            <div class="container">
-                <span class="ml-10 section__subtitle">Best Choice</span>
-                <h2 class="ml-10 section__title">
-                    Popular Residences<span>.</span>
-                </h2>
-
-                <div class="popular__container swiper">
-                    <div class="swiper-wrapper">
-                        <article class="popular__card swiper-slide">
-                            <a href="products/property1.html">
-                                <img src="assets/img/dar4.jpg" alt="" class="popular__img">
-                            </a>
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>MAD</span>666,356
-                                </h2>
-                                <h3 class="popular__title">
-                                    Garden Assat
-                                </h3>
-                                <p class="popular__description">
-                                    Marrackech Morocco Ait ourir - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <a href="products/property1.html">
-                                <img src="assets/img/dar5.jpg" alt="" class="popular__img">
-                            </a>
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>MAD</span>758,043
-                                </h2>
-                                <h3 class="popular__title">
-                                    Gables Luxurious House
-                                </h3>
-                                <p class="popular__description">
-                                    Marackech Morocco - Hill Av. Sol #6969
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <a href="products/property1.html">
-                                <img src="assets/img/dar6.jpg" alt="" class="popular__img">
-                            </a>
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>MAD</span>359,159
-                                </h2>
-                                <h3 class="popular__title">
-                                    Green Hill House
-                                </h3>
-                                <p class="popular__description">
-                                    RABAT Sale - Hill Av. Sol #8888
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <a href="products/property1.html">
-                                <img src="assets/img/dar7.jpg" alt="" class="popular__img">
-                            </a>
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>MAD</span>620,024
-                                </h2>
-                                <h3 class="popular__title">
-                                    Luxurious City Garden
-                                </h3>
-                                <p class="popular__description">
-                                    Garden City AssatStreet The Garden City Of Miraflores,
-                                    Lima - Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-
-                        <article class="popular__card swiper-slide">
-                            <a href="products/property1.html">
-                                <img src="assets/img/dar8.jpg" alt="" class="popular__img">
-                            </a>
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>MAD</span>479,043
-                                </h2>
-                                <h3 class="popular__title">
-                                    Aliva Private Garden
-                                </h3>
-                                <p class="popular__description">
-                                    Los Angeles AssatStreet,
-                                    Assat - Downtown Av. Sol #1000
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class='bx bx-chevron-right'></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class='bx bx-chevron-left'></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="popular section" id="popular">
-            <div class="container">
-                <span class="ml-10 section__subtitle">Best Choice</span>
-                <h2 class="ml-10 section__title">
-                    Popular Residences<span>.</span>
-                </h2>
-
-                <div class="popular__container swiper">
-                    <div class="swiper-wrapper">
-                        <article class="popular__card swiper-slide">
-                            <a href="products/property1.html">
-                                <img src="assets/img/dar8.jpg" alt="" class="popular__img">
-                            </a>
-
-                            <div class="popular__data">
-                                <h2 class="popular__price">
-                                    <span>MAD</span>620,024
-                                </h2>
-                                <h3 class="popular__title">
-                                    Luxurious City Garden
-                                </h3>
-                                <p class="popular__description">
-                                    MARRACKECH MOROCCO- Perú Av. Sol #9876
-                                </p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
+      <section class="hero" id="home">
         <div class="container">
-            <ul class="gallery-list">
 
-                <li class="gallery-item">
-                    <figure class="gallery-image1">
-                        <img src="/assets/img/dar4.jpg" alt="Gallery image">
-                    </figure>
-                </li>
+          <h2 class="h1 hero-title">بيوت الأحلام: ممتلكات فاخرة تناسب ذوقك</h2>
 
-                <li class="gallery-item">
-                    <figure class="gallery-image2">
-                        <img src="/assets/img/popular1.jpg" alt="Gallery image">
-                    </figure>
-                </li>
+          <p class="hero-text">
+            اكتشف منزل أحلامك مع بيتناتك
+          </p>
 
-                <li class="gallery-item">
-                    <figure class="gallery-image3">
-                        <img src="/assets/img/popular1.jpg" alt="Gallery image">
-                    </figure>
-                </li>
+          <div class="btn-group">
+            <button class="btn btn-primary">المزيد</button>
 
-                <li class="gallery-item">
-                    <figure class="gallery-image4">
-                        <img src="/assets/img/popular1.jpg" alt="Gallery image">
-                    </figure>
-                </li>
+            <button class="btn btn-secondary">اتصل الان</button>
+          </div>
 
-                <li class="gallery-item">
-                    <figure class="gallery-image5">
-                        <img src="/assets/img/popular1.jpg" alt="Gallery image">
-                    </figure>
-                </li>
-
-            </ul>
-
-
-
-            <!--==================== VALUE ====================-->
-            <section class="value section" id="value">
-                <div class="value__container container grid">
-                    <div class="value__images">
-                        <div class="value__orbe"></div>
-
-                        <div class="value__img">
-                            <img src="assets/img/value.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="value__content">
-                        <div class="value__data">
-                            <span class="ml-10 section__subtitle">Value</span>
-                            <h2 class="ml-10 section__title">
-                                Value We Provide<span>.</span>
-                            </h2>
-                            <p class="ml-10 value__description">
-                                We always ready to help by providing the best service for you.
-                                We believe a good place to live can make your life better and happier.
-                            </p>
-                        </div>
-
-                        <div class="value__accordion">
-                            <div class="value__accordion-item">
-                                <header class="value__accordion-header">
-                                    <i class='bx bxs-shield-x value__accordion-icon'></i>
-                                    <h3 class="value__accordion-title">
-                                        Best return on investment (ROI) on the market
-                                    </h3>
-                                    <div class="value__accordion-arrow">
-                                        <i class='bx bxs-down-arrow'></i>
-                                    </div>
-                                </header>
-
-                                <div class="value__accordion-content">
-                                    <p class="value__accordion-description">
-                                        Price we provides is the best for you,
-                                        we guarantee no price changes on your property due
-                                        to various unexpected costs that may come.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="value__accordion-item">
-                                <header class="value__accordion-header">
-                                    <i class='bx bxs-x-square value__accordion-icon'></i>
-                                    <h3 class="value__accordion-title">
-                                        Prevent unstable prices
-                                    </h3>
-                                    <div class="value__accordion-arrow">
-                                        <i class='bx bxs-down-arrow'></i>
-                                    </div>
-                                </header>
-
-                                <div class="value__accordion-content">
-                                    <p class="value__accordion-description">
-                                        We are fortunate that recent years have offered periods
-                                        of stability and limited exposure to cost increases.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="value__accordion-item">
-                                <header class="value__accordion-header">
-                                    <i class='bx bxs-bar-chart-square value__accordion-icon'></i>
-                                    <h3 class="value__accordion-title">
-                                        Best prices on the market
-                                    </h3>
-                                    <div class="value__accordion-arrow">
-                                        <i class='bx bxs-down-arrow'></i>
-                                    </div>
-                                </header>
-
-                                <div class="value__accordion-content">
-                                    <p class="value__accordion-description">
-                                        We can guarantee that we have best price on the
-                                        market for all different big or small properties.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="value__accordion-item">
-                                <header class="value__accordion-header">
-                                    <i class='bx bxs-check-square value__accordion-icon'></i>
-                                    <h3 class="value__accordion-title">
-                                        Security of your data
-                                    </h3>
-                                    <div class="value__accordion-arrow">
-                                        <i class='bx bxs-down-arrow'></i>
-                                    </div>
-                                </header>
-
-                                <div class="value__accordion-content">
-                                    <p class="value__accordion-description">
-                                        We guarantee your personal information security unless
-                                        its legal authorities who needs them LMAO
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            
-            <div class="w-full flex flex-col lg:flex-row">
-                    <div class="w-full lg:w-2/3 relative">
-                      <img src="assets/img/card.png" alt="Your Image" class="w-full h-auto max-w-full lg:max-w-full rounded-tl-lg lg:rounded-bl-lg">
-                      
-                    </div>
-                    <div class="w-full lg:w-1/3 lg:pl-8 mt-4 lg:mt-0">
-                      <!-- Other content here -->
-                    </div>
-                  </div>
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <div class="flex justify-center items-center contact__container container grid">
-                    <div class="contact__images">
-                        <div class="contact__orbe"></div>
-                        <div class="contact__img">
-                            <img src="assets/img/contact.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="contact__content">
-                        <div class="contact__data">
-                            <span class="section__subtitle">Contact Us</span>
-                            <h2 class="section__title">Get in touch<span>!</span>
-                            </h2>
-                            <p class="contact__description">
-                                Is there a problem finding your dream home? Need a
-                                guide in buying first home? or need a consultation
-                                on residential issues? just contact us.
-                            </p>
-                        </div>
-
-                        <div class="contact__card">
-                            <div class="contact__card-box">
-                                <div class="contact__card-info">
-                                    <i class='bx bxl-whatsapp'></i>
-                                    <div>
-                                        <h3 class="contact__card-title">
-                                            Whatsapp
-                                        </h3>
-                                        <p class="contact__card-description">
-                                            +212671675597
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
-                                    target="_blank"><button class="button contact__card-button">
-                                        Write us
-                                    </button></a>
-                            </div>
-                            <div class="contact__card-box">
-                                <div class="contact__card-info">
-                                    <i class='bx bxs-phone-call'></i>
-                                    <div>
-                                        <h3 class="contact__card-title">
-                                            call
-                                        </h3>
-                                        <p class="contact__card-description">
-                                            +212671675597
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="https://api.whatsapp.com/send/?phone=212633332947&text=Hola+Danila.&type=phone_number&app_absent=0"
-                                    target="_blank"><button class="button contact__card-button">
-                                        Call Now
-                                    </button></a>
-                            </div>
-                            <div class="contact__card-box">
-                                <div class="contact__card-info">
-                                    <i class='bx bxs-video'></i>
-                                    <div>
-                                        <h3 class="contact__card-title">
-                                            Meet
-                                        </h3>
-                                        <p class="contact__card-description">
-                                            en Google Meet
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="https://hyperlabs.up.railway.app" target="_blank"><button
-                                        class="button contact__card-button">
-                                        Video Call Now
-                                    </button></a>
-                            </div>
-                            <div class="contact__card-box">
-                                <div class="contact__card-info">
-                                    <i class='bx bxs-envelope'></i>
-                                    <div>
-                                        <h3 class="contact__card-title">
-                                            Email
-                                        </h3>
-                                        <p class="contact__card-description">
-                                            bytona@gmail.com
-                                        </p>
-                                    </div>
-                                </div>
-                                <a href="mailto:adeleddarai29@gmail.com"><button class="button contact__card-button">
-                                        Email us
-                                    </button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <div class="flex justify-center items-center col-sm mt-5">
-                <iframe
-                  src="https://www.google.com/maps/d/embed?mid=1mJXWIlR20vec-LJyQAUQERgyN2I&ehbc=2E312F"
-                  width="100%" height="300" style="border: 3px solid #e5c4a6; border-radius: 20px" allowfullscreen=""
-                  loading="lazy"></iframe>
-              </div>
-
-            <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ait%20ourir%20marrackech&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-i.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
-               -->
-
-            <!--==================== SUBSCRIBE ====================-->
-            <section class="ml-4 flex justify-center items-center subscribe section">
-                <div class="subscribe__container container">
-                    <h1 class="subscribe__title">
-                        Get Started with BaytonaTech
-                    </h1>
-                    <p class="subscribe__description">
-                        Signup and find super attractive price
-                        quotes from us, Find your residence soon
-                    </p>
-                    <a href="products/property1.html" class="button subscribe__button" target="_blank">
-                        Get Started
-                    </a>
-                </div>
-            </section>
-    </main>
-        
-        
-
-    <!--==================== FOOTER ====================-->
-    <footer class="footer section">
-        <div class="ml-10 footer__container container grid">
-            <div>
-                <a href="#" class="footer__logo">
-                    BaytonaTech <i class='bx bxs-home-alt-2'></i>
-                </a>
-                <p class="footer__description">
-                    Our vision is to find all people <br>
-                    the best place to live for them.
-                </p>
-            </div>
-
-            <div class="footer__content">
-                <div>
-                    <h3 class="footer__title">
-                        About
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Features</a>
-                        </li>
-                        <li>
-                            <a href="Blog/blog-details.html" class="footer__link">News & Blog</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Company
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">How We Work?</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Capital</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Security</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Support
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">FAQs</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Support Center</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Follow Us
-                    </h3>
-
-                    <ul class="footer__social">
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="footer__social-link">
-                            <i class='bx bxl-facebook-square'></i>
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer__social-link">
-                            <i class='bx bxl-instagram-alt'></i>
-                        </a>
-                        <a href="https://www.pinterest.com/" target="_blank" rel="noopener" class="footer__social-link">
-                            <i class='bx bxl-pinterest'></i>
-                        </a>
-                    </ul>
-                </div>
-            </div>
         </div>
+      </section>
 
-        <div class="footer__info container">
-            <span class="footer__copy">
-                &#169; BaytonaTech. All rigths reserved
-            </span>
 
-            <div class="footer__privacy">
-                <a href="Privacy/privacy.html">Terms & Agreements</a>
-                <a href="Privacy/privacy.html">Privacy Policy</a>
-            </div>
+
+
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      
+
+
+
+
+<div id="indicators-carousel" class="relative w-full mt-10 container mx-auto p-1" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+            <img src="assets/img/dar4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
-    </footer>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/img/dar4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/img/dar4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/img/dar4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="assets/img/dar4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
 
-
-
-
-    <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bxs-chevrons-up'></i>
-    </a>
-
-
-    <!-- <div id="google_translate_element"></div>
-
-<script>
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-</script>
-
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<select id="translate_language">
-  <option value="en">English</option>
-  <option value="fr">French</option>
-  <option value="ar">Arabic</option>
-  <option value="es">Spanish</option>
-</select>
-
-<script>
-document.getElementById("translate_language").addEventListener("change", function() {
-  var language = this.value;
-  var element = document.getElementById("google_translate_element");
-  element.setAttribute("pageLanguage", language);
-});
-</script> -->
 
 
   
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!--=============== SIMULATOR JS ===============-->
-    <script src="assets/js/bills-simulator.js"></script>
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle">اعلانات المنزل</p>
+
+          <h2 class="h2 section-title">منازل للبيع</h2>
+
+          <p class="section-text">
+            منازل للبيع باجود الاثمنة.
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <a href="products/property1.html">
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/img/dar1.jpg" alt="San miguel, italy" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">مراكش</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">ايت اورير</a>
+                  </h3>
+
+                  <p class="card-text">
+                    متفر به جميع التهجيزات
+                  </p>
+
+                  <p class="text-2xl">900 MAD</p>
+                </div>
+
+              </div>
+              
+<div class="flex items-center mb-2">
+    <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <p class="ml-2 text-sm font-medium text-gray-900 dark:text-white">4.95 out of 5</p>
+</div>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">1,745 global ratings</p>
+<div class="flex items-center mt-4">
+    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
+    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+        <div class="h-5 bg-yellow-300 rounded" style="width: 70%"></div>
+    </div>
+    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">70%</span>
+</div>
+  
+
+            </li>
+          </a>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/img/dar2.jpg" alt="Burj khalifa, dubai" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">مراكش</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">ايت اورير</a>
+                  </h3>
+
+                  <p class="card-text">
+                    متفر به جميع التهجيزات
+                  </p>
+
+                  <p class="text-2xl">900 MAD</p>
+
+                </div>
+
+              </div>
+              <div class="flex items-center mb-2">
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <p class="ml-2 text-sm font-medium text-gray-900 dark:text-white">4.95 out of 5</p>
+            </div>
+            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">1,745 global ratings</p>
+            <div class="flex items-center mt-4">
+                <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
+                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                    <div class="h-5 bg-yellow-300 rounded" style="width: 70%"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-500 dark:text-gray-400">70%</span>
+            </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assets/img/dar3.jpg" alt="Kyoto temple, japan" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">مراكش</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">ايت اورير</a>
+                  </h3>
+
+                  <p class="card-text">
+                    متفر به جميع التهجيزات
+                  </p>
+
+                  <p class="text-2xl">900 MAD</p>
+
+                </div>
+
+              </div>
+              <div class="flex items-center mb-2">
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <svg class="w-4 h-4 text-gray-300 mr-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+                </svg>
+                <p class="ml-2 text-sm font-medium text-gray-900 dark:text-white">4.95 out of 5</p>
+            </div>
+            <p class="text-sm font-medium text-gray-500 dark:text-gray-400">1,745 global ratings</p>
+            <div class="flex items-center mt-4">
+                <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
+                <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
+                    <div class="h-5 bg-yellow-300 rounded" style="width: 70%"></div>
+                </div>
+                <span class="text-sm font-medium text-gray-500 dark:text-gray-400">70%</span>
+            </div>
+            </li>
+            
+          </ul>
+
+        </div>
+      </section>
+
+<!-- component -->
+<!-- This is an example component -->
+
+      
+
+
+      <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">الإقامات الشعبية.</p>
+
+          <h2 class="h2 section-title">أفضل اختيار الإقامات الشعبية</h2>
+
+          <p class="section-text">
+            احصل على فرصة لا تعوض لامتلاك منزل أحلامك! نحن نقدم أفضل الخيارات العقارية التي تناسب احتياجاتك وتفضيلاتك. استفد من خبرتنا الواسعة في سوق العقارات لنساعدك على العثور على الممتلكات المثالية بأسعار تنافسية. لدينا فريق من الخبراء المتخصصين يعمل بجد لمساعدتك في جميع مراحل العملية العقارية، من البحث والعرض حتى إتمام المعاملة بنجاح. اجعل حلمك بامتلاك منزل فاخر ومريح حقيقة ملموسة واستثمر بثقة في مستقبلك العقاري معنا. اتصل بنا الآن ودعنا نبدأ رحلة البحث عن المنزل المثالي لك ولعائلتك!
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/img/dar4.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
+
+                  <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(25 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $750
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/img/dar5.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
+
+                  <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(20 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $520
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/img/dar6.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
+
+                  <p class="card-text">
+                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
+                    cras, aspernatur.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text">Malaysia</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews">(40 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    $660
+                    <span>/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn btn-primary">View All Packages</button>
+
+        </div>
+      </section>
+
+        
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
+  <div class="relative mx-auto w-full">
+	<a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+	  <div class="shadow p-4 rounded-lg bg-white">
+		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+			<div class="absolute inset-0 bg-black opacity-10"></div>
+		  </div>
+
+		  <div class="absolute flex justify-center bottom-0 mb-3">
+			<div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480,226.15V80a48,48,0,0,0-48-48H80A48,48,0,0,0,32,80V226.15C13.74,231,0,246.89,0,266.67V472a8,8,0,0,0,8,8H24a8,8,0,0,0,8-8V416H480v56a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V266.67C512,246.89,498.26,231,480,226.15ZM64,192a32,32,0,0,1,32-32H208a32,32,0,0,1,32,32v32H64Zm384,32H272V192a32,32,0,0,1,32-32H416a32,32,0,0,1,32,32ZM80,64H432a16,16,0,0,1,16,16v56.9a63.27,63.27,0,0,0-32-8.9H304a63.9,63.9,0,0,0-48,21.71A63.9,63.9,0,0,0,208,128H96a63.27,63.27,0,0,0-32,8.9V80A16,16,0,0,1,80,64ZM32,384V266.67A10.69,10.69,0,0,1,42.67,256H469.33A10.69,10.69,0,0,1,480,266.67V384Z"></path></svg>
+				3 + 1
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M423.18 195.81l-24.94-76.58C387.51 86.29 356.81 64 322.17 64H157.83c-34.64 0-65.34 22.29-76.07 55.22L56.82 195.8C24.02 205.79 0 235.92 0 271.99V400c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48v-16h256v16c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48V271.99c0-36.07-24.02-66.2-56.82-76.18zm-310.99-66.67c6.46-19.82 24.8-33.14 45.64-33.14h164.34c20.84 0 39.18 13.32 45.64 33.13l20.47 62.85H91.72l20.47-62.84zM80 400c0 8.83-7.19 16-16 16H48c-8.81 0-16-7.17-16-16v-16h48v16zm368 0c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm0-80.01v32H32v-80c0-26.47 21.53-48 48-48h320c26.47 0 48 21.53 48 48v48zM104.8 248C78.84 248 60 264.8 60 287.95c0 23.15 18.84 39.95 44.8 39.95l10.14.1c39.21 0 45.06-20.1 45.06-32.08 0-24.68-31.1-47.92-55.2-47.92zm10.14 56c-3.51 0-7.02-.1-10.14-.1-12.48 0-20.8-6.38-20.8-15.95S92.32 272 104.8 272s31.2 14.36 31.2 23.93c0 7.17-10.53 8.07-21.06 8.07zm260.26-56c-24.1 0-55.2 23.24-55.2 47.93 0 11.98 5.85 32.08 45.06 32.08l10.14-.1c25.96 0 44.8-16.8 44.8-39.95 0-23.16-18.84-39.96-44.8-39.96zm0 55.9c-3.12 0-6.63.1-10.14.1-10.53 0-21.06-.9-21.06-8.07 0-9.57 18.72-23.93 31.2-23.93s20.8 6.38 20.8 15.95-8.32 15.95-20.8 15.95z"></path></svg>
+				2
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504,256H64V61.25a29.26,29.26,0,0,1,49.94-20.69L139.18,65.8A71.49,71.49,0,0,0,128,104c0,20.3,8.8,38.21,22.34,51.26L138.58,167a8,8,0,0,0,0,11.31l11.31,11.32a8,8,0,0,0,11.32,0L285.66,65.21a8,8,0,0,0,0-11.32L274.34,42.58a8,8,0,0,0-11.31,0L251.26,54.34C238.21,40.8,220.3,32,200,32a71.44,71.44,0,0,0-38.2,11.18L136.56,18A61.24,61.24,0,0,0,32,61.25V256H8a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H32v96c0,41.74,26.8,76.9,64,90.12V504a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V480H384v24a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V474.12c37.2-13.22,64-48.38,64-90.12V288h24a8,8,0,0,0,8-8V264A8,8,0,0,0,504,256ZM228.71,76.9,172.9,132.71A38.67,38.67,0,0,1,160,104a40,40,0,0,1,40-40A38.67,38.67,0,0,1,228.71,76.9ZM448,384a64.07,64.07,0,0,1-64,64H128a64.07,64.07,0,0,1-64-64V288H448Z"></path></svg>
+				3
+			  </p>
+			</div>
+		  </div>
+
+		  <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+			Featured
+		  </span>
+		</div>
+
+		<div class="mt-4">
+		  <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+			Statue of Liberty
+		  </h2>
+		  <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+			New York, NY 10004, United States
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  Condominium
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M17.5883 7.872H16.4286L16.7097 8.99658H6.74743V10.1211H17.4309C17.5163 10.1211 17.6006 10.1017 17.6774 10.0642C17.7542 10.0267 17.8214 9.97222 17.874 9.90487C17.9266 9.83753 17.9631 9.75908 17.9808 9.6755C17.9986 9.59192 17.997 9.5054 17.9763 9.42251L17.5883 7.872ZM17.5883 4.49829H16.4286L16.7097 5.62286H6.74743V6.74743H17.4309C17.5163 6.74742 17.6006 6.72794 17.6774 6.69046C17.7542 6.65299 17.8214 6.59851 17.874 6.53116C17.9266 6.46381 17.9631 6.38537 17.9808 6.30179C17.9986 6.2182 17.997 6.13168 17.9763 6.04879L17.5883 4.49829ZM17.4309 0H0.562286C0.413158 0 0.270139 0.0592407 0.16469 0.16469C0.0592407 0.270139 0 0.413158 0 0.562286L0 2.81143C0 2.96056 0.0592407 3.10358 0.16469 3.20903C0.270139 3.31448 0.413158 3.37372 0.562286 3.37372H4.49829V5.62286H1.28271L1.56386 4.49829H0.404143L0.0175714 6.04879C-0.00313354 6.13162 -0.00470302 6.21808 0.012982 6.30161C0.0306671 6.38514 0.0671423 6.46355 0.119641 6.53088C0.172139 6.59822 0.239283 6.65271 0.315978 6.69023C0.392673 6.72775 0.476905 6.74731 0.562286 6.74743H4.49829V8.99658H1.28271L1.56386 7.872H0.404143L0.0175714 9.42251C-0.00313354 9.50534 -0.00470302 9.5918 0.012982 9.67533C0.0306671 9.75886 0.0671423 9.83727 0.119641 9.9046C0.172139 9.97193 0.239283 10.0264 0.315978 10.0639C0.392673 10.1015 0.476905 10.121 0.562286 10.1211H4.49829V14.7228C4.12312 14.8554 3.80693 15.1164 3.60559 15.4596C3.40424 15.8028 3.33072 16.2062 3.39801 16.5984C3.4653 16.9906 3.66907 17.3464 3.9733 17.6028C4.27754 17.8593 4.66265 18 5.06057 18C5.4585 18 5.84361 17.8593 6.14784 17.6028C6.45208 17.3464 6.65585 16.9906 6.72314 16.5984C6.79043 16.2062 6.7169 15.8028 6.51556 15.4596C6.31422 15.1164 5.99803 14.8554 5.62286 14.7228V3.37372H17.4309C17.58 3.37372 17.723 3.31448 17.8285 3.20903C17.9339 3.10358 17.9932 2.96056 17.9932 2.81143V0.562286C17.9932 0.413158 17.9339 0.270139 17.8285 0.16469C17.723 0.0592407 17.58 0 17.4309 0V0ZM5.06057 16.8686C4.94936 16.8686 4.84065 16.8356 4.74818 16.7738C4.65572 16.712 4.58365 16.6242 4.54109 16.5215C4.49853 16.4187 4.4874 16.3057 4.50909 16.1966C4.53079 16.0875 4.58434 15.9873 4.66298 15.9087C4.74162 15.8301 4.8418 15.7765 4.95088 15.7548C5.05995 15.7331 5.17301 15.7443 5.27575 15.7868C5.3785 15.8294 5.46631 15.9014 5.5281 15.9939C5.58988 16.0864 5.62286 16.1951 5.62286 16.3063C5.62286 16.4554 5.56362 16.5984 5.45817 16.7039C5.35272 16.8093 5.2097 16.8686 5.06057 16.8686ZM16.8686 2.24914H1.12457V1.12457H16.8686V2.24914Z"></path>
+			</svg>
+			<span class="mt-2 xl:mt-0">
+			  Partly furnished
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399.959 170.585c-4.686 4.686-4.686 12.284 0 16.971L451.887 239H60.113l51.928-51.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-84.485 84c-4.686 4.686-4.686 12.284 0 16.971l84.485 84c4.686 4.686 12.284 4.686 16.97 0l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273h391.773l-51.928 51.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l84.485-84c4.687-4.686 4.687-12.284 0-16.971l-84.485-84c-4.686-4.686-12.284-4.686-16.97 0l-7.07 7.071z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  1,386 sq. ft.
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M532.01 386.17C559.48 359.05 576 325.04 576 288c0-80.02-76.45-146.13-176.18-157.94 0 .01.01.02.01.03C368.37 72.47 294.34 32 208 32 93.12 32 0 103.63 0 192c0 37.04 16.52 71.05 43.99 98.17-15.3 30.74-37.34 54.53-37.7 54.89-6.31 6.69-8.05 16.53-4.42 24.99A23.085 23.085 0 0 0 23.06 384c53.54 0 96.67-20.24 125.17-38.78 9.08 2.09 18.45 3.68 28 4.82C207.74 407.59 281.73 448 368 448c20.79 0 40.83-2.41 59.77-6.78C456.27 459.76 499.4 480 552.94 480c9.22 0 17.55-5.5 21.18-13.96 3.64-8.46 1.89-18.3-4.42-24.99-.35-.36-22.39-24.14-37.69-54.88zm-376.59-72.13l-13.24-3.05-11.39 7.41c-20.07 13.06-50.49 28.25-87.68 32.47 8.77-11.3 20.17-27.61 29.54-46.44l10.32-20.75-16.49-16.28C50.75 251.87 32 226.19 32 192c0-70.58 78.95-128 176-128s176 57.42 176 128-78.95 128-176 128c-17.73 0-35.42-2.01-52.58-5.96zm289.8 100.35l-11.39-7.41-13.24 3.05A234.318 234.318 0 0 1 368 416c-65.14 0-122-25.94-152.43-64.29C326.91 348.62 416 278.4 416 192c0-9.45-1.27-18.66-3.32-27.66C488.12 178.78 544 228.67 544 288c0 34.19-18.75 59.87-34.47 75.39l-16.49 16.28 10.32 20.75c9.38 18.86 20.81 35.19 29.53 46.44-37.19-4.22-67.6-19.41-87.67-32.47zM233.38 182.91l-41.56-12.47c-4.22-1.27-7.19-5.62-7.19-10.58 0-6.03 4.34-10.94 9.66-10.94h25.94c3.9 0 7.65 1.08 10.96 3.1 3.17 1.93 7.31 1.15 10-1.4l11.44-10.87c3.53-3.36 3.38-9.22-.54-12.11-8.18-6.03-17.97-9.58-28.08-10.32V104c0-4.42-3.58-8-8-8h-16c-4.42 0-8 3.58-8 8v13.4c-21.85 1.29-39.38 19.62-39.38 42.46 0 18.98 12.34 35.94 30 41.23l41.56 12.47c4.22 1.27 7.19 5.62 7.19 10.58 0 6.03-4.34 10.94-9.66 10.94h-25.94c-3.9 0-7.65-1.08-10.96-3.1-3.17-1.94-7.31-1.15-10 1.4l-11.44 10.87c-3.53 3.36-3.38 9.22.54 12.11 8.18 6.03 17.97 9.58 28.08 10.32V280c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8v-13.4c21.85-1.29 39.38-19.62 39.38-42.46 0-18.98-12.35-35.94-30-41.23z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  $1.98 /sq.ft
+			</span>
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 mt-8">
+		  <div class="flex items-center">
+			<div class="relative">
+			  <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+			  <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+			</div>
+
+			<p class="ml-2 text-gray-800 line-clamp-1">
+			  John Doe
+			</p>
+		  </div>
+
+		  <div class="flex justify-end">
+			<p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+			  <span class="text-sm uppercase">
+				$
+			  </span>
+			  <span class="text-lg">3,200</span>/m
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</a>
+  </div>
+
+  <div class="relative mx-auto w-full">
+	<a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+	  <div class="shadow p-4 rounded-lg bg-white">
+		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+			<div class="absolute inset-0 bg-black opacity-10"></div>
+		  </div>
+
+		  <div class="absolute flex justify-center bottom-0 mb-3">
+			<div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480,226.15V80a48,48,0,0,0-48-48H80A48,48,0,0,0,32,80V226.15C13.74,231,0,246.89,0,266.67V472a8,8,0,0,0,8,8H24a8,8,0,0,0,8-8V416H480v56a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V266.67C512,246.89,498.26,231,480,226.15ZM64,192a32,32,0,0,1,32-32H208a32,32,0,0,1,32,32v32H64Zm384,32H272V192a32,32,0,0,1,32-32H416a32,32,0,0,1,32,32ZM80,64H432a16,16,0,0,1,16,16v56.9a63.27,63.27,0,0,0-32-8.9H304a63.9,63.9,0,0,0-48,21.71A63.9,63.9,0,0,0,208,128H96a63.27,63.27,0,0,0-32,8.9V80A16,16,0,0,1,80,64ZM32,384V266.67A10.69,10.69,0,0,1,42.67,256H469.33A10.69,10.69,0,0,1,480,266.67V384Z"></path></svg>
+				3 + 1
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M423.18 195.81l-24.94-76.58C387.51 86.29 356.81 64 322.17 64H157.83c-34.64 0-65.34 22.29-76.07 55.22L56.82 195.8C24.02 205.79 0 235.92 0 271.99V400c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48v-16h256v16c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48V271.99c0-36.07-24.02-66.2-56.82-76.18zm-310.99-66.67c6.46-19.82 24.8-33.14 45.64-33.14h164.34c20.84 0 39.18 13.32 45.64 33.13l20.47 62.85H91.72l20.47-62.84zM80 400c0 8.83-7.19 16-16 16H48c-8.81 0-16-7.17-16-16v-16h48v16zm368 0c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm0-80.01v32H32v-80c0-26.47 21.53-48 48-48h320c26.47 0 48 21.53 48 48v48zM104.8 248C78.84 248 60 264.8 60 287.95c0 23.15 18.84 39.95 44.8 39.95l10.14.1c39.21 0 45.06-20.1 45.06-32.08 0-24.68-31.1-47.92-55.2-47.92zm10.14 56c-3.51 0-7.02-.1-10.14-.1-12.48 0-20.8-6.38-20.8-15.95S92.32 272 104.8 272s31.2 14.36 31.2 23.93c0 7.17-10.53 8.07-21.06 8.07zm260.26-56c-24.1 0-55.2 23.24-55.2 47.93 0 11.98 5.85 32.08 45.06 32.08l10.14-.1c25.96 0 44.8-16.8 44.8-39.95 0-23.16-18.84-39.96-44.8-39.96zm0 55.9c-3.12 0-6.63.1-10.14.1-10.53 0-21.06-.9-21.06-8.07 0-9.57 18.72-23.93 31.2-23.93s20.8 6.38 20.8 15.95-8.32 15.95-20.8 15.95z"></path></svg>
+				2
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504,256H64V61.25a29.26,29.26,0,0,1,49.94-20.69L139.18,65.8A71.49,71.49,0,0,0,128,104c0,20.3,8.8,38.21,22.34,51.26L138.58,167a8,8,0,0,0,0,11.31l11.31,11.32a8,8,0,0,0,11.32,0L285.66,65.21a8,8,0,0,0,0-11.32L274.34,42.58a8,8,0,0,0-11.31,0L251.26,54.34C238.21,40.8,220.3,32,200,32a71.44,71.44,0,0,0-38.2,11.18L136.56,18A61.24,61.24,0,0,0,32,61.25V256H8a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H32v96c0,41.74,26.8,76.9,64,90.12V504a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V480H384v24a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V474.12c37.2-13.22,64-48.38,64-90.12V288h24a8,8,0,0,0,8-8V264A8,8,0,0,0,504,256ZM228.71,76.9,172.9,132.71A38.67,38.67,0,0,1,160,104a40,40,0,0,1,40-40A38.67,38.67,0,0,1,228.71,76.9ZM448,384a64.07,64.07,0,0,1-64,64H128a64.07,64.07,0,0,1-64-64V288H448Z"></path></svg>
+				3
+			  </p>
+			</div>
+		  </div>
+
+		  <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+			Featured
+		  </span>
+		</div>
+
+		<div class="mt-4">
+		  <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+			Statue of Liberty
+		  </h2>
+		  <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+			New York, NY 10004, United States
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  Condominium
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M17.5883 7.872H16.4286L16.7097 8.99658H6.74743V10.1211H17.4309C17.5163 10.1211 17.6006 10.1017 17.6774 10.0642C17.7542 10.0267 17.8214 9.97222 17.874 9.90487C17.9266 9.83753 17.9631 9.75908 17.9808 9.6755C17.9986 9.59192 17.997 9.5054 17.9763 9.42251L17.5883 7.872ZM17.5883 4.49829H16.4286L16.7097 5.62286H6.74743V6.74743H17.4309C17.5163 6.74742 17.6006 6.72794 17.6774 6.69046C17.7542 6.65299 17.8214 6.59851 17.874 6.53116C17.9266 6.46381 17.9631 6.38537 17.9808 6.30179C17.9986 6.2182 17.997 6.13168 17.9763 6.04879L17.5883 4.49829ZM17.4309 0H0.562286C0.413158 0 0.270139 0.0592407 0.16469 0.16469C0.0592407 0.270139 0 0.413158 0 0.562286L0 2.81143C0 2.96056 0.0592407 3.10358 0.16469 3.20903C0.270139 3.31448 0.413158 3.37372 0.562286 3.37372H4.49829V5.62286H1.28271L1.56386 4.49829H0.404143L0.0175714 6.04879C-0.00313354 6.13162 -0.00470302 6.21808 0.012982 6.30161C0.0306671 6.38514 0.0671423 6.46355 0.119641 6.53088C0.172139 6.59822 0.239283 6.65271 0.315978 6.69023C0.392673 6.72775 0.476905 6.74731 0.562286 6.74743H4.49829V8.99658H1.28271L1.56386 7.872H0.404143L0.0175714 9.42251C-0.00313354 9.50534 -0.00470302 9.5918 0.012982 9.67533C0.0306671 9.75886 0.0671423 9.83727 0.119641 9.9046C0.172139 9.97193 0.239283 10.0264 0.315978 10.0639C0.392673 10.1015 0.476905 10.121 0.562286 10.1211H4.49829V14.7228C4.12312 14.8554 3.80693 15.1164 3.60559 15.4596C3.40424 15.8028 3.33072 16.2062 3.39801 16.5984C3.4653 16.9906 3.66907 17.3464 3.9733 17.6028C4.27754 17.8593 4.66265 18 5.06057 18C5.4585 18 5.84361 17.8593 6.14784 17.6028C6.45208 17.3464 6.65585 16.9906 6.72314 16.5984C6.79043 16.2062 6.7169 15.8028 6.51556 15.4596C6.31422 15.1164 5.99803 14.8554 5.62286 14.7228V3.37372H17.4309C17.58 3.37372 17.723 3.31448 17.8285 3.20903C17.9339 3.10358 17.9932 2.96056 17.9932 2.81143V0.562286C17.9932 0.413158 17.9339 0.270139 17.8285 0.16469C17.723 0.0592407 17.58 0 17.4309 0V0ZM5.06057 16.8686C4.94936 16.8686 4.84065 16.8356 4.74818 16.7738C4.65572 16.712 4.58365 16.6242 4.54109 16.5215C4.49853 16.4187 4.4874 16.3057 4.50909 16.1966C4.53079 16.0875 4.58434 15.9873 4.66298 15.9087C4.74162 15.8301 4.8418 15.7765 4.95088 15.7548C5.05995 15.7331 5.17301 15.7443 5.27575 15.7868C5.3785 15.8294 5.46631 15.9014 5.5281 15.9939C5.58988 16.0864 5.62286 16.1951 5.62286 16.3063C5.62286 16.4554 5.56362 16.5984 5.45817 16.7039C5.35272 16.8093 5.2097 16.8686 5.06057 16.8686ZM16.8686 2.24914H1.12457V1.12457H16.8686V2.24914Z"></path>
+			</svg>
+			<span class="mt-2 xl:mt-0">
+			  Partly furnished
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399.959 170.585c-4.686 4.686-4.686 12.284 0 16.971L451.887 239H60.113l51.928-51.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-84.485 84c-4.686 4.686-4.686 12.284 0 16.971l84.485 84c4.686 4.686 12.284 4.686 16.97 0l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273h391.773l-51.928 51.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l84.485-84c4.687-4.686 4.687-12.284 0-16.971l-84.485-84c-4.686-4.686-12.284-4.686-16.97 0l-7.07 7.071z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  1,386 sq. ft.
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M532.01 386.17C559.48 359.05 576 325.04 576 288c0-80.02-76.45-146.13-176.18-157.94 0 .01.01.02.01.03C368.37 72.47 294.34 32 208 32 93.12 32 0 103.63 0 192c0 37.04 16.52 71.05 43.99 98.17-15.3 30.74-37.34 54.53-37.7 54.89-6.31 6.69-8.05 16.53-4.42 24.99A23.085 23.085 0 0 0 23.06 384c53.54 0 96.67-20.24 125.17-38.78 9.08 2.09 18.45 3.68 28 4.82C207.74 407.59 281.73 448 368 448c20.79 0 40.83-2.41 59.77-6.78C456.27 459.76 499.4 480 552.94 480c9.22 0 17.55-5.5 21.18-13.96 3.64-8.46 1.89-18.3-4.42-24.99-.35-.36-22.39-24.14-37.69-54.88zm-376.59-72.13l-13.24-3.05-11.39 7.41c-20.07 13.06-50.49 28.25-87.68 32.47 8.77-11.3 20.17-27.61 29.54-46.44l10.32-20.75-16.49-16.28C50.75 251.87 32 226.19 32 192c0-70.58 78.95-128 176-128s176 57.42 176 128-78.95 128-176 128c-17.73 0-35.42-2.01-52.58-5.96zm289.8 100.35l-11.39-7.41-13.24 3.05A234.318 234.318 0 0 1 368 416c-65.14 0-122-25.94-152.43-64.29C326.91 348.62 416 278.4 416 192c0-9.45-1.27-18.66-3.32-27.66C488.12 178.78 544 228.67 544 288c0 34.19-18.75 59.87-34.47 75.39l-16.49 16.28 10.32 20.75c9.38 18.86 20.81 35.19 29.53 46.44-37.19-4.22-67.6-19.41-87.67-32.47zM233.38 182.91l-41.56-12.47c-4.22-1.27-7.19-5.62-7.19-10.58 0-6.03 4.34-10.94 9.66-10.94h25.94c3.9 0 7.65 1.08 10.96 3.1 3.17 1.93 7.31 1.15 10-1.4l11.44-10.87c3.53-3.36 3.38-9.22-.54-12.11-8.18-6.03-17.97-9.58-28.08-10.32V104c0-4.42-3.58-8-8-8h-16c-4.42 0-8 3.58-8 8v13.4c-21.85 1.29-39.38 19.62-39.38 42.46 0 18.98 12.34 35.94 30 41.23l41.56 12.47c4.22 1.27 7.19 5.62 7.19 10.58 0 6.03-4.34 10.94-9.66 10.94h-25.94c-3.9 0-7.65-1.08-10.96-3.1-3.17-1.94-7.31-1.15-10 1.4l-11.44 10.87c-3.53 3.36-3.38 9.22.54 12.11 8.18 6.03 17.97 9.58 28.08 10.32V280c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8v-13.4c21.85-1.29 39.38-19.62 39.38-42.46 0-18.98-12.35-35.94-30-41.23z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  $1.98 /sq.ft
+			</span>
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 mt-8">
+		  <div class="flex items-center">
+			<div class="relative">
+			  <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+			  <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+			</div>
+
+			<p class="ml-2 text-gray-800 line-clamp-1">
+			  John Doe
+			</p>
+		  </div>
+
+		  <div class="flex justify-end">
+			<p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+			  <span class="text-sm uppercase">
+				$
+			  </span>
+			  <span class="text-lg">3,200</span>/m
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</a>
+  </div>
+
+  <div class="relative mx-auto w-full">
+	<a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+	  <div class="shadow p-4 rounded-lg bg-white">
+		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+			<div class="absolute inset-0 bg-black opacity-10"></div>
+		  </div>
+
+		  <div class="absolute flex justify-center bottom-0 mb-3">
+			<div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480,226.15V80a48,48,0,0,0-48-48H80A48,48,0,0,0,32,80V226.15C13.74,231,0,246.89,0,266.67V472a8,8,0,0,0,8,8H24a8,8,0,0,0,8-8V416H480v56a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V266.67C512,246.89,498.26,231,480,226.15ZM64,192a32,32,0,0,1,32-32H208a32,32,0,0,1,32,32v32H64Zm384,32H272V192a32,32,0,0,1,32-32H416a32,32,0,0,1,32,32ZM80,64H432a16,16,0,0,1,16,16v56.9a63.27,63.27,0,0,0-32-8.9H304a63.9,63.9,0,0,0-48,21.71A63.9,63.9,0,0,0,208,128H96a63.27,63.27,0,0,0-32,8.9V80A16,16,0,0,1,80,64ZM32,384V266.67A10.69,10.69,0,0,1,42.67,256H469.33A10.69,10.69,0,0,1,480,266.67V384Z"></path></svg>
+				3 + 1
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M423.18 195.81l-24.94-76.58C387.51 86.29 356.81 64 322.17 64H157.83c-34.64 0-65.34 22.29-76.07 55.22L56.82 195.8C24.02 205.79 0 235.92 0 271.99V400c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48v-16h256v16c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48V271.99c0-36.07-24.02-66.2-56.82-76.18zm-310.99-66.67c6.46-19.82 24.8-33.14 45.64-33.14h164.34c20.84 0 39.18 13.32 45.64 33.13l20.47 62.85H91.72l20.47-62.84zM80 400c0 8.83-7.19 16-16 16H48c-8.81 0-16-7.17-16-16v-16h48v16zm368 0c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm0-80.01v32H32v-80c0-26.47 21.53-48 48-48h320c26.47 0 48 21.53 48 48v48zM104.8 248C78.84 248 60 264.8 60 287.95c0 23.15 18.84 39.95 44.8 39.95l10.14.1c39.21 0 45.06-20.1 45.06-32.08 0-24.68-31.1-47.92-55.2-47.92zm10.14 56c-3.51 0-7.02-.1-10.14-.1-12.48 0-20.8-6.38-20.8-15.95S92.32 272 104.8 272s31.2 14.36 31.2 23.93c0 7.17-10.53 8.07-21.06 8.07zm260.26-56c-24.1 0-55.2 23.24-55.2 47.93 0 11.98 5.85 32.08 45.06 32.08l10.14-.1c25.96 0 44.8-16.8 44.8-39.95 0-23.16-18.84-39.96-44.8-39.96zm0 55.9c-3.12 0-6.63.1-10.14.1-10.53 0-21.06-.9-21.06-8.07 0-9.57 18.72-23.93 31.2-23.93s20.8 6.38 20.8 15.95-8.32 15.95-20.8 15.95z"></path></svg>
+				2
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504,256H64V61.25a29.26,29.26,0,0,1,49.94-20.69L139.18,65.8A71.49,71.49,0,0,0,128,104c0,20.3,8.8,38.21,22.34,51.26L138.58,167a8,8,0,0,0,0,11.31l11.31,11.32a8,8,0,0,0,11.32,0L285.66,65.21a8,8,0,0,0,0-11.32L274.34,42.58a8,8,0,0,0-11.31,0L251.26,54.34C238.21,40.8,220.3,32,200,32a71.44,71.44,0,0,0-38.2,11.18L136.56,18A61.24,61.24,0,0,0,32,61.25V256H8a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H32v96c0,41.74,26.8,76.9,64,90.12V504a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V480H384v24a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V474.12c37.2-13.22,64-48.38,64-90.12V288h24a8,8,0,0,0,8-8V264A8,8,0,0,0,504,256ZM228.71,76.9,172.9,132.71A38.67,38.67,0,0,1,160,104a40,40,0,0,1,40-40A38.67,38.67,0,0,1,228.71,76.9ZM448,384a64.07,64.07,0,0,1-64,64H128a64.07,64.07,0,0,1-64-64V288H448Z"></path></svg>
+				3
+			  </p>
+			</div>
+		  </div>
+
+		  <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+			Featured
+		  </span>
+		</div>
+
+		<div class="mt-4">
+		  <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+			Statue of Liberty
+		  </h2>
+		  <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+			New York, NY 10004, United States
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  Condominium
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M17.5883 7.872H16.4286L16.7097 8.99658H6.74743V10.1211H17.4309C17.5163 10.1211 17.6006 10.1017 17.6774 10.0642C17.7542 10.0267 17.8214 9.97222 17.874 9.90487C17.9266 9.83753 17.9631 9.75908 17.9808 9.6755C17.9986 9.59192 17.997 9.5054 17.9763 9.42251L17.5883 7.872ZM17.5883 4.49829H16.4286L16.7097 5.62286H6.74743V6.74743H17.4309C17.5163 6.74742 17.6006 6.72794 17.6774 6.69046C17.7542 6.65299 17.8214 6.59851 17.874 6.53116C17.9266 6.46381 17.9631 6.38537 17.9808 6.30179C17.9986 6.2182 17.997 6.13168 17.9763 6.04879L17.5883 4.49829ZM17.4309 0H0.562286C0.413158 0 0.270139 0.0592407 0.16469 0.16469C0.0592407 0.270139 0 0.413158 0 0.562286L0 2.81143C0 2.96056 0.0592407 3.10358 0.16469 3.20903C0.270139 3.31448 0.413158 3.37372 0.562286 3.37372H4.49829V5.62286H1.28271L1.56386 4.49829H0.404143L0.0175714 6.04879C-0.00313354 6.13162 -0.00470302 6.21808 0.012982 6.30161C0.0306671 6.38514 0.0671423 6.46355 0.119641 6.53088C0.172139 6.59822 0.239283 6.65271 0.315978 6.69023C0.392673 6.72775 0.476905 6.74731 0.562286 6.74743H4.49829V8.99658H1.28271L1.56386 7.872H0.404143L0.0175714 9.42251C-0.00313354 9.50534 -0.00470302 9.5918 0.012982 9.67533C0.0306671 9.75886 0.0671423 9.83727 0.119641 9.9046C0.172139 9.97193 0.239283 10.0264 0.315978 10.0639C0.392673 10.1015 0.476905 10.121 0.562286 10.1211H4.49829V14.7228C4.12312 14.8554 3.80693 15.1164 3.60559 15.4596C3.40424 15.8028 3.33072 16.2062 3.39801 16.5984C3.4653 16.9906 3.66907 17.3464 3.9733 17.6028C4.27754 17.8593 4.66265 18 5.06057 18C5.4585 18 5.84361 17.8593 6.14784 17.6028C6.45208 17.3464 6.65585 16.9906 6.72314 16.5984C6.79043 16.2062 6.7169 15.8028 6.51556 15.4596C6.31422 15.1164 5.99803 14.8554 5.62286 14.7228V3.37372H17.4309C17.58 3.37372 17.723 3.31448 17.8285 3.20903C17.9339 3.10358 17.9932 2.96056 17.9932 2.81143V0.562286C17.9932 0.413158 17.9339 0.270139 17.8285 0.16469C17.723 0.0592407 17.58 0 17.4309 0V0ZM5.06057 16.8686C4.94936 16.8686 4.84065 16.8356 4.74818 16.7738C4.65572 16.712 4.58365 16.6242 4.54109 16.5215C4.49853 16.4187 4.4874 16.3057 4.50909 16.1966C4.53079 16.0875 4.58434 15.9873 4.66298 15.9087C4.74162 15.8301 4.8418 15.7765 4.95088 15.7548C5.05995 15.7331 5.17301 15.7443 5.27575 15.7868C5.3785 15.8294 5.46631 15.9014 5.5281 15.9939C5.58988 16.0864 5.62286 16.1951 5.62286 16.3063C5.62286 16.4554 5.56362 16.5984 5.45817 16.7039C5.35272 16.8093 5.2097 16.8686 5.06057 16.8686ZM16.8686 2.24914H1.12457V1.12457H16.8686V2.24914Z"></path>
+			</svg>
+			<span class="mt-2 xl:mt-0">
+			  Partly furnished
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399.959 170.585c-4.686 4.686-4.686 12.284 0 16.971L451.887 239H60.113l51.928-51.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-84.485 84c-4.686 4.686-4.686 12.284 0 16.971l84.485 84c4.686 4.686 12.284 4.686 16.97 0l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273h391.773l-51.928 51.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l84.485-84c4.687-4.686 4.687-12.284 0-16.971l-84.485-84c-4.686-4.686-12.284-4.686-16.97 0l-7.07 7.071z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  1,386 sq. ft.
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M532.01 386.17C559.48 359.05 576 325.04 576 288c0-80.02-76.45-146.13-176.18-157.94 0 .01.01.02.01.03C368.37 72.47 294.34 32 208 32 93.12 32 0 103.63 0 192c0 37.04 16.52 71.05 43.99 98.17-15.3 30.74-37.34 54.53-37.7 54.89-6.31 6.69-8.05 16.53-4.42 24.99A23.085 23.085 0 0 0 23.06 384c53.54 0 96.67-20.24 125.17-38.78 9.08 2.09 18.45 3.68 28 4.82C207.74 407.59 281.73 448 368 448c20.79 0 40.83-2.41 59.77-6.78C456.27 459.76 499.4 480 552.94 480c9.22 0 17.55-5.5 21.18-13.96 3.64-8.46 1.89-18.3-4.42-24.99-.35-.36-22.39-24.14-37.69-54.88zm-376.59-72.13l-13.24-3.05-11.39 7.41c-20.07 13.06-50.49 28.25-87.68 32.47 8.77-11.3 20.17-27.61 29.54-46.44l10.32-20.75-16.49-16.28C50.75 251.87 32 226.19 32 192c0-70.58 78.95-128 176-128s176 57.42 176 128-78.95 128-176 128c-17.73 0-35.42-2.01-52.58-5.96zm289.8 100.35l-11.39-7.41-13.24 3.05A234.318 234.318 0 0 1 368 416c-65.14 0-122-25.94-152.43-64.29C326.91 348.62 416 278.4 416 192c0-9.45-1.27-18.66-3.32-27.66C488.12 178.78 544 228.67 544 288c0 34.19-18.75 59.87-34.47 75.39l-16.49 16.28 10.32 20.75c9.38 18.86 20.81 35.19 29.53 46.44-37.19-4.22-67.6-19.41-87.67-32.47zM233.38 182.91l-41.56-12.47c-4.22-1.27-7.19-5.62-7.19-10.58 0-6.03 4.34-10.94 9.66-10.94h25.94c3.9 0 7.65 1.08 10.96 3.1 3.17 1.93 7.31 1.15 10-1.4l11.44-10.87c3.53-3.36 3.38-9.22-.54-12.11-8.18-6.03-17.97-9.58-28.08-10.32V104c0-4.42-3.58-8-8-8h-16c-4.42 0-8 3.58-8 8v13.4c-21.85 1.29-39.38 19.62-39.38 42.46 0 18.98 12.34 35.94 30 41.23l41.56 12.47c4.22 1.27 7.19 5.62 7.19 10.58 0 6.03-4.34 10.94-9.66 10.94h-25.94c-3.9 0-7.65-1.08-10.96-3.1-3.17-1.94-7.31-1.15-10 1.4l-11.44 10.87c-3.53 3.36-3.38 9.22.54 12.11 8.18 6.03 17.97 9.58 28.08 10.32V280c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8v-13.4c21.85-1.29 39.38-19.62 39.38-42.46 0-18.98-12.35-35.94-30-41.23z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  $1.98 /sq.ft
+			</span>
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 mt-8">
+		  <div class="flex items-center">
+			<div class="relative">
+			  <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+			  <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+			</div>
+
+			<p class="ml-2 text-gray-800 line-clamp-1">
+			  John Doe
+			</p>
+		  </div>
+
+		  <div class="flex justify-end">
+			<p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+			  <span class="text-sm uppercase">
+				$
+			  </span>
+			  <span class="text-lg">3,200</span>/m
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</a>
+  </div>
+
+  <div class="relative mx-auto w-full">
+	<a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+	  <div class="shadow p-4 rounded-lg bg-white">
+		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+			<div class="absolute inset-0 bg-black opacity-10"></div>
+		  </div>
+
+		  <div class="absolute flex justify-center bottom-0 mb-3">
+			<div class="flex bg-white px-4 py-1 space-x-5 rounded-lg overflow-hidden shadow">
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M480,226.15V80a48,48,0,0,0-48-48H80A48,48,0,0,0,32,80V226.15C13.74,231,0,246.89,0,266.67V472a8,8,0,0,0,8,8H24a8,8,0,0,0,8-8V416H480v56a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V266.67C512,246.89,498.26,231,480,226.15ZM64,192a32,32,0,0,1,32-32H208a32,32,0,0,1,32,32v32H64Zm384,32H272V192a32,32,0,0,1,32-32H416a32,32,0,0,1,32,32ZM80,64H432a16,16,0,0,1,16,16v56.9a63.27,63.27,0,0,0-32-8.9H304a63.9,63.9,0,0,0-48,21.71A63.9,63.9,0,0,0,208,128H96a63.27,63.27,0,0,0-32,8.9V80A16,16,0,0,1,80,64ZM32,384V266.67A10.69,10.69,0,0,1,42.67,256H469.33A10.69,10.69,0,0,1,480,266.67V384Z"></path></svg>
+				3 + 1
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><path d="M423.18 195.81l-24.94-76.58C387.51 86.29 356.81 64 322.17 64H157.83c-34.64 0-65.34 22.29-76.07 55.22L56.82 195.8C24.02 205.79 0 235.92 0 271.99V400c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48v-16h256v16c0 26.47 21.53 48 48 48h16c26.47 0 48-21.53 48-48V271.99c0-36.07-24.02-66.2-56.82-76.18zm-310.99-66.67c6.46-19.82 24.8-33.14 45.64-33.14h164.34c20.84 0 39.18 13.32 45.64 33.13l20.47 62.85H91.72l20.47-62.84zM80 400c0 8.83-7.19 16-16 16H48c-8.81 0-16-7.17-16-16v-16h48v16zm368 0c0 8.83-7.19 16-16 16h-16c-8.81 0-16-7.17-16-16v-16h48v16zm0-80.01v32H32v-80c0-26.47 21.53-48 48-48h320c26.47 0 48 21.53 48 48v48zM104.8 248C78.84 248 60 264.8 60 287.95c0 23.15 18.84 39.95 44.8 39.95l10.14.1c39.21 0 45.06-20.1 45.06-32.08 0-24.68-31.1-47.92-55.2-47.92zm10.14 56c-3.51 0-7.02-.1-10.14-.1-12.48 0-20.8-6.38-20.8-15.95S92.32 272 104.8 272s31.2 14.36 31.2 23.93c0 7.17-10.53 8.07-21.06 8.07zm260.26-56c-24.1 0-55.2 23.24-55.2 47.93 0 11.98 5.85 32.08 45.06 32.08l10.14-.1c25.96 0 44.8-16.8 44.8-39.95 0-23.16-18.84-39.96-44.8-39.96zm0 55.9c-3.12 0-6.63.1-10.14.1-10.53 0-21.06-.9-21.06-8.07 0-9.57 18.72-23.93 31.2-23.93s20.8 6.38 20.8 15.95-8.32 15.95-20.8 15.95z"></path></svg>
+				2
+			  </p>
+
+			  <p class="flex items-center font-medium text-gray-800">
+				<svg class="w-5 h-5 fill-current mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504,256H64V61.25a29.26,29.26,0,0,1,49.94-20.69L139.18,65.8A71.49,71.49,0,0,0,128,104c0,20.3,8.8,38.21,22.34,51.26L138.58,167a8,8,0,0,0,0,11.31l11.31,11.32a8,8,0,0,0,11.32,0L285.66,65.21a8,8,0,0,0,0-11.32L274.34,42.58a8,8,0,0,0-11.31,0L251.26,54.34C238.21,40.8,220.3,32,200,32a71.44,71.44,0,0,0-38.2,11.18L136.56,18A61.24,61.24,0,0,0,32,61.25V256H8a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H32v96c0,41.74,26.8,76.9,64,90.12V504a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V480H384v24a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V474.12c37.2-13.22,64-48.38,64-90.12V288h24a8,8,0,0,0,8-8V264A8,8,0,0,0,504,256ZM228.71,76.9,172.9,132.71A38.67,38.67,0,0,1,160,104a40,40,0,0,1,40-40A38.67,38.67,0,0,1,228.71,76.9ZM448,384a64.07,64.07,0,0,1-64,64H128a64.07,64.07,0,0,1-64-64V288H448Z"></path></svg>
+				3
+			  </p>
+			</div>
+		  </div>
+
+		  <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+			Featured
+		  </span>
+		</div>
+
+		<div class="mt-4">
+		  <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+			Statue of Liberty
+		  </h2>
+		  <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+			New York, NY 10004, United States
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  Condominium
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+			  <path d="M17.5883 7.872H16.4286L16.7097 8.99658H6.74743V10.1211H17.4309C17.5163 10.1211 17.6006 10.1017 17.6774 10.0642C17.7542 10.0267 17.8214 9.97222 17.874 9.90487C17.9266 9.83753 17.9631 9.75908 17.9808 9.6755C17.9986 9.59192 17.997 9.5054 17.9763 9.42251L17.5883 7.872ZM17.5883 4.49829H16.4286L16.7097 5.62286H6.74743V6.74743H17.4309C17.5163 6.74742 17.6006 6.72794 17.6774 6.69046C17.7542 6.65299 17.8214 6.59851 17.874 6.53116C17.9266 6.46381 17.9631 6.38537 17.9808 6.30179C17.9986 6.2182 17.997 6.13168 17.9763 6.04879L17.5883 4.49829ZM17.4309 0H0.562286C0.413158 0 0.270139 0.0592407 0.16469 0.16469C0.0592407 0.270139 0 0.413158 0 0.562286L0 2.81143C0 2.96056 0.0592407 3.10358 0.16469 3.20903C0.270139 3.31448 0.413158 3.37372 0.562286 3.37372H4.49829V5.62286H1.28271L1.56386 4.49829H0.404143L0.0175714 6.04879C-0.00313354 6.13162 -0.00470302 6.21808 0.012982 6.30161C0.0306671 6.38514 0.0671423 6.46355 0.119641 6.53088C0.172139 6.59822 0.239283 6.65271 0.315978 6.69023C0.392673 6.72775 0.476905 6.74731 0.562286 6.74743H4.49829V8.99658H1.28271L1.56386 7.872H0.404143L0.0175714 9.42251C-0.00313354 9.50534 -0.00470302 9.5918 0.012982 9.67533C0.0306671 9.75886 0.0671423 9.83727 0.119641 9.9046C0.172139 9.97193 0.239283 10.0264 0.315978 10.0639C0.392673 10.1015 0.476905 10.121 0.562286 10.1211H4.49829V14.7228C4.12312 14.8554 3.80693 15.1164 3.60559 15.4596C3.40424 15.8028 3.33072 16.2062 3.39801 16.5984C3.4653 16.9906 3.66907 17.3464 3.9733 17.6028C4.27754 17.8593 4.66265 18 5.06057 18C5.4585 18 5.84361 17.8593 6.14784 17.6028C6.45208 17.3464 6.65585 16.9906 6.72314 16.5984C6.79043 16.2062 6.7169 15.8028 6.51556 15.4596C6.31422 15.1164 5.99803 14.8554 5.62286 14.7228V3.37372H17.4309C17.58 3.37372 17.723 3.31448 17.8285 3.20903C17.9339 3.10358 17.9932 2.96056 17.9932 2.81143V0.562286C17.9932 0.413158 17.9339 0.270139 17.8285 0.16469C17.723 0.0592407 17.58 0 17.4309 0V0ZM5.06057 16.8686C4.94936 16.8686 4.84065 16.8356 4.74818 16.7738C4.65572 16.712 4.58365 16.6242 4.54109 16.5215C4.49853 16.4187 4.4874 16.3057 4.50909 16.1966C4.53079 16.0875 4.58434 15.9873 4.66298 15.9087C4.74162 15.8301 4.8418 15.7765 4.95088 15.7548C5.05995 15.7331 5.17301 15.7443 5.27575 15.7868C5.3785 15.8294 5.46631 15.9014 5.5281 15.9939C5.58988 16.0864 5.62286 16.1951 5.62286 16.3063C5.62286 16.4554 5.56362 16.5984 5.45817 16.7039C5.35272 16.8093 5.2097 16.8686 5.06057 16.8686ZM16.8686 2.24914H1.12457V1.12457H16.8686V2.24914Z"></path>
+			</svg>
+			<span class="mt-2 xl:mt-0">
+			  Partly furnished
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399.959 170.585c-4.686 4.686-4.686 12.284 0 16.971L451.887 239H60.113l51.928-51.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-84.485 84c-4.686 4.686-4.686 12.284 0 16.971l84.485 84c4.686 4.686 12.284 4.686 16.97 0l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273h391.773l-51.928 51.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l84.485-84c4.687-4.686 4.687-12.284 0-16.971l-84.485-84c-4.686-4.686-12.284-4.686-16.97 0l-7.07 7.071z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  1,386 sq. ft.
+			</span>
+		  </p>
+		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+			<svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M532.01 386.17C559.48 359.05 576 325.04 576 288c0-80.02-76.45-146.13-176.18-157.94 0 .01.01.02.01.03C368.37 72.47 294.34 32 208 32 93.12 32 0 103.63 0 192c0 37.04 16.52 71.05 43.99 98.17-15.3 30.74-37.34 54.53-37.7 54.89-6.31 6.69-8.05 16.53-4.42 24.99A23.085 23.085 0 0 0 23.06 384c53.54 0 96.67-20.24 125.17-38.78 9.08 2.09 18.45 3.68 28 4.82C207.74 407.59 281.73 448 368 448c20.79 0 40.83-2.41 59.77-6.78C456.27 459.76 499.4 480 552.94 480c9.22 0 17.55-5.5 21.18-13.96 3.64-8.46 1.89-18.3-4.42-24.99-.35-.36-22.39-24.14-37.69-54.88zm-376.59-72.13l-13.24-3.05-11.39 7.41c-20.07 13.06-50.49 28.25-87.68 32.47 8.77-11.3 20.17-27.61 29.54-46.44l10.32-20.75-16.49-16.28C50.75 251.87 32 226.19 32 192c0-70.58 78.95-128 176-128s176 57.42 176 128-78.95 128-176 128c-17.73 0-35.42-2.01-52.58-5.96zm289.8 100.35l-11.39-7.41-13.24 3.05A234.318 234.318 0 0 1 368 416c-65.14 0-122-25.94-152.43-64.29C326.91 348.62 416 278.4 416 192c0-9.45-1.27-18.66-3.32-27.66C488.12 178.78 544 228.67 544 288c0 34.19-18.75 59.87-34.47 75.39l-16.49 16.28 10.32 20.75c9.38 18.86 20.81 35.19 29.53 46.44-37.19-4.22-67.6-19.41-87.67-32.47zM233.38 182.91l-41.56-12.47c-4.22-1.27-7.19-5.62-7.19-10.58 0-6.03 4.34-10.94 9.66-10.94h25.94c3.9 0 7.65 1.08 10.96 3.1 3.17 1.93 7.31 1.15 10-1.4l11.44-10.87c3.53-3.36 3.38-9.22-.54-12.11-8.18-6.03-17.97-9.58-28.08-10.32V104c0-4.42-3.58-8-8-8h-16c-4.42 0-8 3.58-8 8v13.4c-21.85 1.29-39.38 19.62-39.38 42.46 0 18.98 12.34 35.94 30 41.23l41.56 12.47c4.22 1.27 7.19 5.62 7.19 10.58 0 6.03-4.34 10.94-9.66 10.94h-25.94c-3.9 0-7.65-1.08-10.96-3.1-3.17-1.94-7.31-1.15-10 1.4l-11.44 10.87c-3.53 3.36-3.38 9.22.54 12.11 8.18 6.03 17.97 9.58 28.08 10.32V280c0 4.42 3.58 8 8 8h16c4.42 0 8-3.58 8-8v-13.4c21.85-1.29 39.38-19.62 39.38-42.46 0-18.98-12.35-35.94-30-41.23z"></path></svg>
+			<span class="mt-2 xl:mt-0">
+			  $1.98 /sq.ft
+			</span>
+		  </p>
+		</div>
+
+		<div class="grid grid-cols-2 mt-8">
+		  <div class="flex items-center">
+			<div class="relative">
+			  <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+			  <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+			</div>
+
+			<p class="ml-2 text-gray-800 line-clamp-1">
+			  John Doe
+			</p>
+		  </div>
+
+		  <div class="flex justify-end">
+			<p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+			  <span class="text-sm uppercase">
+				$
+			  </span>
+			  <span class="text-lg">3,200</span>/m
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</a>
+  </div>
+</div>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+          <p class="section-text">
+            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
+            Sit ornare
+            mollitia tenetur, aptent.
+          </p>
+
+         
+          <video class="w-full rounded-lg" controls>
+            <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle">Call To Action</p>
+
+            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+
+            <p class="section-text">
+              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
+              laudantium. Sit ornare
+              mollitia tenetur, aptent.
+            </p>
+          </div>
+
+          <button class="btn btn-secondary">Contact Us !</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <style>
+    .justify-center {
+    
+      border-radius: 10px; /* Adjust the value to change the roundness of the corners */
+      overflow: hidden; /* This is necessary to ensure the rounded corners are applied to the iframe as well */
+    }
+  </style>
+  
+  
+  <div class="mt-5 mb-5 justify-center align-items flex">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1391.0569693146804!2d-7.702431407240428!3d31.636004807005186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda559d773fc28f1%3A0xe212a1cafaedee3c!2sAit%20Ourire%20al%20haouz%20maroc!5e1!3m2!1sen!2sma!4v1690147009621!5m2!1sen!2sma" width="700" height="450" style="border:15;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <!-- <script src="//code.tidio.co/lmasyh7pwjjaxcywqhk4cnsqu79wtojj.js" async></script> -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <!-- <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Tourly logo">
+          </a> -->
+
+          <p class="footer-text">
+            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
+            at
+            perferendis, pretium, aenean aut ultrices.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>3146 Koontz, California</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
 </body>
 
 </html>
